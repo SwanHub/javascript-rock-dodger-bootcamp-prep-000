@@ -128,7 +128,8 @@ function createRock(x) {
  
 function endGame() {
   clearInterval(gameInterval);
-  document.getElementByClassName('rock').remove();
+  let rocks = document.getElementByClassName('rock');
+  rocks.remove();
  
 }
 
