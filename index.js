@@ -128,9 +128,9 @@ function createRock(x) {
  
 function endGame() {
   clearInterval(gameInterval);
-  let rocks = document.getElementByClassName('rock');
-  rocks.remove();
- 
+  for (let i = 0; i < ROCKS.length; i++) {
+   ROCKS[i].remove(); 
+  }
 }
 
 function moveDodger(e) {
